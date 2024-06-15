@@ -35,7 +35,7 @@ export const NavBarList = ({ onClose }) => {  // Recibimos la función onClose c
     const handleItemClick = (action) => {
         if (action === 'logout') {
             localStorage.removeItem("token");
-            window.location.href = '/login';
+            window.location.href = '#/login';
         }
         onClose();
     };

@@ -53,7 +53,7 @@ export const UserProfilePopover = () => {
 
     const logOut = () =>{
         localStorage.removeItem("token");
-        window.location.href = '/login';
+        window.location.href = '#/login';
     }
 
 

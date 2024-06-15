@@ -73,7 +73,7 @@ const Registro = () => {
       if (response.ok) {
         const data = await response.json();
         localStorage.setItem('token', data.token);
-        window.location.href = '/inventory/dashboard';
+        window.location.href = '#/inventory/dashboard';
       } else {
         if (response.status === 400) {
           setError('El correo electrónico o nombre de usuario ya están registrados.');

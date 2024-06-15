@@ -24,7 +24,7 @@ const Login = () => {
       localStorage.setItem('token', data.token);
       
       if(data.token){
-        window.location.href = '/inventory/dashboard';
+        window.location.href = '#/inventory/dashboard';
       }
     } catch (error) {
       if (error.response && error.response.status === 401) {
